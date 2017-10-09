@@ -4,3 +4,65 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body{
+	color: black;
+}
+
+header{
+	padding-top: 10px;
+	
+	overflow: auto;
+	
+	margin: auto;
+}
+
+header img{
+	float: left;
+	width: 25%;
+	height: 25%;
+}
+
+header nav{
+	float: right;
+}
+
+.botonera{
+	margin: 30px 60px;
+
+	list-style-type: none;
+
+	display: flex;
+}
+
+.botonera li{
+	flex-grow: 1;
+}
+
+.botonera a{
+	text-decoration:none;  
+	color: black;
+	padding: 10px 20px;
+	display: block;
+	text-align: center;
+}
+.botonera a:hover{
+	background-color: orange;
+	color: white;
+}
+
+.portada{
+	background-color: red;
+}
+
+.servicios{
+	background-color: violet;
+}
+
+.formulario{
+	background-color: aqua;
+}
+
+footer{
+	background-clip: yellow;
+}
