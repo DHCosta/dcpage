@@ -6,21 +6,27 @@
 }
 
 body{
+	font-family: 'Quicksand', sans-serif;	
 	color: black;
 }
 
 header{
-	padding-top: 10px;
-	
-	overflow: auto;
-	
-	margin: auto;
+	max-width: auto;
+	overflow: auto;	
+}
+
+header div{
+	background-color: #247BA0;
+	/*background-image: url("images/linedpaper.png");*/
+	max-width: auto;
+	padding: 4px 0px;
 }
 
 header img{
 	float: left;
-	width: 25%;
-	height: 25%;
+	width: 15%;
+	height: 15%;
+	margin-left: 50px;
 }
 
 header nav{
@@ -28,15 +34,20 @@ header nav{
 }
 
 .botonera{
-	margin: 30px 60px;
+	max-width: auto;
+	margin: 10px 50px;
 
 	list-style-type: none;
 
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .botonera li{
-	flex-grow: 1;
+	list-style:none;
+	padding: 10px 0px;	
 }
 
 .botonera a{
@@ -45,22 +56,61 @@ header nav{
 	padding: 10px 20px;
 	display: block;
 	text-align: center;
+	font-size: 14px;
 }
 .botonera a:hover{
-	background-color: orange;
+	/*background-color: MediumSeaGreen;*/
+	background-color: #4281A4;
 	color: white;
 }
 
 .portada{
-	background-color: red;
+	width: auto;
+	height: 500px;
+	text-align: center;
+	/*background-color: #F4A261;
+	background-image: url("images/linedpaper.png");*/
+	background-image: url("images/gplaypattern_@2X.png");
+}
+
+.portada input{
+	padding: 10px 14px;
+	margin: 20px 0px;
+	
+	color: white;
+	font-weight: bold;
+	border: 1px solid MediumSeaGreen;	
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-o-border-radius: 0px;
+	background-color: MediumSeaGreen;
+	background: linear-gradient(left, MediumSeaGreen, MediumSeaGreen);
+	background: -moz-linear-gradient(left, MediumSeaGreen, MediumSeaGreen);
+	background: -webkit-linear-gradient(left, MediumSeaGreen, MediumSeaGreen);
+	background: -o-linear-gradient(left, MediumSeaGreen, MediumSeaGreen);
+
+	cursor: pointer;
 }
 
 .servicios{
-	background-color: violet;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .formulario{
 	background-color: aqua;
+}
+
+.servicio{
+	flex: 1;	
+	border: 1px solid MediumSeaGreen;	
+	text-align: center;
+	border-radius: 10%;
+	margin: 30px 30px;
+	padding: 10px;
 }
 
 footer{
