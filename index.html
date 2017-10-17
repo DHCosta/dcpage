@@ -11,8 +11,8 @@
         <header>
             <div></div>
             <a href="index.html">
-                <!--<img src="images/logo_dc.png" alt="logo">-->
-                <img src="#" alt="logo">
+                <img src="images/logo_dc.png" alt="logo">
+                <!--<img src="#" alt="logo">-->
             </a>
             <nav>
                 <ul class="botonera">
@@ -24,12 +24,11 @@
         </header>
         
         <section class="portada">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               Aliquam id ante posuere, finibus nulla id, laoreet elit. <br>
-               Curabitur ullamcorper nisl sit amet faucibus pretium.
-               Mauris et erat id risus tincidunt fringilla tempor in augue. <br>
-               Nullam ac turpis quis risus convallis vehicula a ut elit. <br>
-               Aliquam maximus sollicitudin porttitor.
+            <!--<img src="images/idea.jpg" alt="">-->
+            <p>
+                Soy Dario Costa, Ingeniero en Informática y diseñador web freelance.<br> 
+                Llevo mas de 10 años trabajando en el rubro de la Informática y la experiencia de todos estos años <br>
+                me han permitido descubrir el amor por el diseño y ofrecer soluciones a medida para grandes y pequeñas empresas.
             </p>
             <input type="button" name="contactame" value="CONTACTAME AHORA">
         </section>
@@ -73,21 +72,35 @@
         <section id= "contacto" class="contacto">
             <div class="detalle_izq"></div>
             <div class="formulario">
-                <h1>XXXXXXXXXX</h1>
-                <p></p>
+                <h1>¿BUSCAS UN DISEÑADOR WEB?</h1>
+                <p>Contame que necesitas y me pondré en contacto contigo a la brevedad</p>
                 <form action="contacto.php" method="post">
-                    <input class="inp" type="text" class="formulario-nombre">
-                    <input class="inp" type="email" class="formulario-email">
-                    <input class="inp" type="text" class="formulario-prop">
-                    <input type="submit" value="Enviar" class="newsletter-boton">
+                    <input placeholder="Nombre *" type="text" class="formulario-in" required />
+                    <input placeholder="Apellido *" type="text" class="formulario-in" required />
+                    <input placeholder="Email *" type="email" class="formulario-in" required />
+                    <textarea placeholder="Mensaje" type="text" class="formulario-in" rows="10" ></textarea>
+                    <input type="submit" value="ENVIAR MENSAJE" class="newsletter-boton">
                 </form>
             </div>
             <div class="datos">
-                <img src="images/lamparas/lampara1.jpg" alt="Imagen de Dario">
-                <p>
-                    nombre <br>
-                    email <br>                            
-                </p>
+
+                <h2>¡Puedo ayudarte!</h2>                           
+                <div class="d_item">
+                    <a href="mailto: info@dariocosta.com.ar">
+                        <img width="50" height="50" src="images/email.svg" alt="">
+                    </a>
+                    <p>E-MAIL<br>
+                    Pedime tu presupuesto</p>
+                </div>
+
+                <div class="d_item">
+                    <a href="tel:+5491155555555">
+                        <img width="50" height="50" src="images/telefono.svg" alt="">
+                    </a>
+                    <p>TELÉFONO<br>
+                    Llamame</p>
+                </div>
+                
             </div>
             <div class="detalle_der"></div>
         </section>

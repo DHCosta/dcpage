@@ -12,7 +12,7 @@ body{
 
 header{
 	overflow: auto;	
-	border-bottom: 1px #E7E7E7 solid;
+	border-bottom: 1px #E7E7E7 solid;	
 }
 
 header div{
@@ -31,6 +31,7 @@ header img{
 
 header nav{
 	float: right;
+	margin-right: 60px;
 }
 
 .botonera{
@@ -65,33 +66,72 @@ header nav{
 }
 
 .portada{
-	width: auto;
-	height: 400px;
+	padding: 100px 0px;
+
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+
 	text-align: center;
-	/*background-color: #F4A261;	
-	background-image: url("images/gplaypattern_@2X.png");
-	background-image: url("images/linedpaper.png");*/
-	background-color: #C2DBC1;	
+}
+
+.portada::before{
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+    background-image: url('images/idea.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.portada p{
+    font-size: 22px;
+	color: black;
+	/*background-color: Gainsboro;
+	opacity: 0.7;*/
+
+    z-index: 2;
+    position: relative;
 }
 
 .portada input{
-	padding: 10px 14px;
+	padding: 15px 14px;
 	margin: 20px 0px;
 	
 	color: white;
 	font-weight: bold;
-	border: 1px solid #C2DBC1;	
+	border: 1px solid orange;	
 	border-radius: 0px;
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
 	-o-border-radius: 0px;
 	background-color: #C2DBC1;
-	background: linear-gradient(left, MediumSeaGreen, MediumSeaGreen);
-	background: -moz-linear-gradient(left, MediumSeaGreen, MediumSeaGreen);
-	background: -webkit-linear-gradient(left, MediumSeaGreen, MediumSeaGreen);
-	background: -o-linear-gradient(left, MediumSeaGreen, MediumSeaGreen);
-
+	background: linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
+	background: -moz-linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
+	background: -webkit-linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
+	background: -o-linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
 	cursor: pointer;
+
+	z-index: 2;
+    position: relative;
+}
+
+.portada input:hover{
+	background: white;
+	color:rgba(255, 162, 0, 0.877);
+	font-weight: bold;
 }
 
 .servicios{
@@ -124,22 +164,33 @@ header nav{
 	padding-top: 3px;
 }
 
-.detalle_izq{
-	float: left;
-
-	background-color: #6C5070;
-	width: 30px;
-	height: 300px;
-}
-
 .contacto{
 	overflow: auto;
+	background-color: #F6F6E3;
+	border-left: 30px solid #6C5070;
+	border-right: 30px solid #6C5070;
 }
 
-.formulario{
-	background-color: aqua;
+.detalle_izq{
+	/*float: left;
+	background-color: #6C5070;
+	width: 2%;*/
+}
+
+.formulario{	
+	padding: 0 10%;
+
 	float: left;
 	text-align: center;	
+	width: 70%;
+}
+
+.formulario h1{
+	margin: 25px 0px 10px 0px;
+}
+
+.formulario p{
+	margin: 0px 0px 10px 0px;
 }
 
 .formulario form{
@@ -149,22 +200,74 @@ header nav{
 	align-items: stretch;
 }
 
-.formulario input{
-	margin: 10px 50px;
+.formulario-in{
+	font-family: 'Roboto', sans-serif;
+	margin: 10px 30px;
+	padding: 10px 10px;
+	border: 2px solid white;
+	resize: none;
+}
+
+.newsletter-boton{
+	padding: 8px 14px;
+	margin: 0px 30px 25px 30px;
+
+	max-width: 100%;
+
+	color: white;
+
+	border: 1px solid rgba(255, 162, 0, 0.877);	
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-o-border-radius: 0px;
+	background-color: #C2DBC1;
+	background: linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
+	background: -moz-linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
+	background: -webkit-linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
+	background: -o-linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
+	cursor: pointer;
+}
+
+.newsletter-boton:hover{
+	background: white;
+	color:rgba(255, 162, 0, 0.877);
 }
 
 .datos{
+	margin-top: 10em;
+	float: right;
+	width: 30%;
+	text-align: left;
+}
+
+.datos h2{
+	margin-bottom: 30px;
+}
+
+.datos div{
+	margin: 10px 0px;
+	overflow: auto;	
+}
+
+.d_item a{
 	float: left;
 }
 
-.detalle_der{
-	float: right;
+.d_item p{
+	font-size: 14px;
+	padding: 5px 0px 10px 20px;
+	float: left;
+	text-align: left;
+}
 
+.detalle_der{
+	/*float: right;
 	background-color: #6C5070;
-	width: 30px;
-	height: 300px;
+	width: 2%;*/
 }
 
 footer{
-	background-clip: yellow;
+	background-color: white;
+	height: 200px;
 }
