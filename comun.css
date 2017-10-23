@@ -6,18 +6,20 @@
 }
 
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: black;
 }
 
 header{
 	overflow: auto;	
+	background-color: #fff;
 	border-bottom: 1px #E7E7E7 solid;	
+	position: fixed;
+	z-index: 3;
 }
 
 header div{
 	background-color: #46466E;
-	/*background-image: url("images/linedpaper.png");*/
 	max-width: auto;
 	padding: 5px 0px;
 }
@@ -27,6 +29,7 @@ header img{
 	width: 15%;
 	height: 15%;
 	margin-left: 100px;
+	margin-top: 3px;
 }
 
 header nav{
@@ -60,14 +63,13 @@ header nav{
 	font-size: 13px;
 }
 .botonera a:hover{
-	/*background-color: MediumSeaGreen;*/
 	background-color: #46466E;
 	color: white;
 }
 
-.bienvenida_img{
+.bienvenida{
 	width: 100%;
-	height: 450px;	
+	height: 550px;	
 
     position: relative;
     background: rgba(0, 0, 0, 0.5);
@@ -76,7 +78,7 @@ header nav{
 	text-align: center;
 }
 
-.bienvenida_img::before{
+.bienvenida::before{
 	content: ' ';
     display: block;
     position: absolute;
@@ -85,10 +87,10 @@ header nav{
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.5;
-	background-image: url('images/idea.jpg');
+    opacity: 0.8;
+	background-image: url('images/inicio.jpg');
     background-repeat: no-repeat;
-    background-position: 50% 25%;
+    background-position: 50% 50%;
     -ms-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
@@ -98,24 +100,30 @@ header nav{
 }
 
 .bienvenida_tx {
-	background-color: #46466E;
-	margin: 0px 0px 0px 0px;
-	padding: 25px 15px 15px 15px;
-	text-align: center;
-	z-index: 2;
-	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 .bienvenida_tx p{
-    font-size: 20px;
+	background-color: #46466E;
+	margin: 300px 0px 0px 0px;
+	padding: 25px 15px 15px 15px;
+	text-align: center;
+	z-index: 2;
+    font-size: 18px;
 	color: #fff;
-	/*background-color: Gainsboro;
-	opacity: 0.7;*/
 }
 
 .sobremi{
 	height: 300px;
 	margin: 40px 0px 0px 0px;
+}
+
+.sobremi h1, .servicios_s h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 10vh;
 }
 
 
@@ -271,15 +279,76 @@ footer{
 
 .foot_comienzo {
 	background-color: #46466E;
-	padding: 30px 0px;
+	padding: 20px 0px;
+}
+
+footer div{
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+
+footer img {
+	height: 5%;
+	width: 5%;
+	padding-top: 20px;
 }
 
 .foot_fin {
 	background-color: white;
-	padding: 80px 0px;
 }
 
+.foot_fin a {
+	margin: 10px;
+}
 
+.linkfb{
+	display: block;
+	width: 33px;
+	height: 33px;
+
+	background-image: url('images/sprite_32px.png');
+	background-position: 374px 162px;		
+}
+.linkfb:hover{
+	background-position: 374px 88px;
+}
+
+.linktw{
+	display: block;
+	width: 32px;
+	height: 33px;
+
+	background-image: url('images/sprite_32px.png');
+	background-position: 259px 162px;			
+}
+.linktw:hover{
+	background-position: 259px 87px;
+}
+
+.linkin{
+	display: block;
+	width: 33px;
+	height: 33px;
+
+	background-image: url('images/sprite_32px.png');
+	background-position: 202px 162px;			
+}
+.linkin:hover{
+	background-position: 202px 87px;
+}
+
+.linkgit{
+	display: block;
+	width: 33px;
+	height: 33px;
+
+	background-image: url('images/sprite_32px.png');
+	background-position: 145px 162px;			
+}
+.linkgit:hover{
+	background-position: 145px 87px;
+}
 /*.foot_comienzo p {
 	background-color: #46466E;
 	color: #DADBC0;
@@ -352,7 +421,7 @@ footer{
     margin: 20px 0 0 0
 }
 .view p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-style: italic;
     font-size: 16px;
     position: relative;
@@ -372,8 +441,6 @@ footer{
 .view a.info:hover {
     box-shadow: 0 0 5px #000
 }
-
-
 
 .view-first img { 
     transition: all 0.2s linear;

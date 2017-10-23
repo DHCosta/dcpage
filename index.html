@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dario Costa</title>
         <link href="comun.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -16,15 +17,15 @@
             </a>
             <nav>
                 <ul class="botonera">
-                    <li><a href="#">SOBRE MI</a></li>
-                    <li><a href="#">SERVICIOS</a></li>
-                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="#sobremi" class="anchorLink">SOBRE MI</a></li>
+                    <li><a href="#servicios_s" class="anchorLink">SERVICIOS</a></li>
+                    <li><a href="#contacto" class="anchorLink">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>
         
         <section class="portada">
-            <div class="bienvenida_img"></div>
+            <div class="bienvenida">
             <!--<img src="images/idea.jpg" alt="">-->
             <div class="bienvenida_tx">
                 <p>
@@ -35,14 +36,15 @@
             </div>
         </section>
 
-        <section class="sobremi">
+        <section id="sobremi" class="sobremi">
             <h1 class="titulo">SOBRE MI</h1>
-            <p></p>
+            <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+            <p>it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </section>
 
-       <section class="servicios_s">
+       <section id="servicios_s" class="servicios_s">
             <h1 class="titulo">SERVICIOS</h1>
-            <p></p>
+            <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
             <div class="servicios">
                 <div class="view view-first">  
                         <img src="images/ic_desktop_mac_black_24px.svg" alt="hosting">
@@ -163,8 +165,18 @@
                 <!--<p>Ahora que ya sabés cómo trabajo, ¡contactame!</p>
                 <input type="button" name="contactame" value="CONTACTAME AHORA">-->
             </div>
-            <div class="foot_fin"></div>
+            <div>
+                <img src="images/logo_gris.png" alt="logo">
+            </div>
+            <div class="foot_fin">
+                <a href="#" class="linkfb" aria-lebel="Facebook"></a>
+                <a href="#" class="linktw" aria-lebel="Twitter"></a>
+                <a href="#" class="linkin" aria-lebel="Linkedin"></a>
+                <a href="#" class="linkgit" aria-lebel="Github"></a>
+            </div>
         </footer>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery.anchor.js" type="text/javascript"></script>
     </body>
 </html>
