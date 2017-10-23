@@ -126,6 +126,29 @@ header nav{
 	font-size: 10vh;
 }
 
+.sobremi div, .par_contenedor{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 20px 40px 10px 40px;
+}
+
+.sobremi p, .servicios_s p{	
+	width: 50%;
+	padding: 0px 15px; 
+}
+
+.par_prin{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.par_sec{
+	font-weight: 100;
+	font-size: 14px;
+}
 
 .servicios{
 	padding: 10px 25px;
@@ -266,12 +289,6 @@ header nav{
 	text-align: left;
 }
 
-.detalle_der{
-	/*float: right;
-	background-color: #6C5070;
-	width: 2%;*/
-}
-
 footer{
 	background-color: white;
 	height: 200px;
@@ -349,48 +366,13 @@ footer img {
 .linkgit:hover{
 	background-position: 145px 87px;
 }
-/*.foot_comienzo p {
-	background-color: #46466E;
-	color: #DADBC0;
-	padding: 30px 0px 10px 0px;
-	font-size: 18px;
-	text-align: center;	
-}
-
-.foot_comienzo input{
-	padding: 15px 14px;
-	margin: 20px 0px;
-	
-	color: white;
-	font-weight: bold;
-	border: 1px solid orange;	
-	border-radius: 0px;
-	-moz-border-radius: 0px;
-	-webkit-border-radius: 0px;
-	-o-border-radius: 0px;
-	background-color: #C2DBC1;
-	background: linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
-	background: -moz-linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
-	background: -webkit-linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
-	background: -o-linear-gradient(left, rgba(255, 162, 0, 0.877), rgba(255, 162, 0, 0.877));
-	cursor: pointer;
-
-	z-index: 2;
-    position: relative;
-}
-
-.foot_comienzo input:hover{
-	background: white;
-	color:rgba(255, 162, 0, 0.877);
-	font-weight: bold;
-}*/
 
 .view {
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     margin: 10px;
     float: left;
-	border: 10px solid #8787A3;
+	border: 5px solid #8787A3;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -399,8 +381,8 @@ footer img {
     background: #fff url(../images/bgimg.jpg) no-repeat center center
 }
 .view .mask, .view .content {
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     position: absolute;
     overflow: hidden;
     top: 0;
