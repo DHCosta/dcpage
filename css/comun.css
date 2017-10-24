@@ -1,0 +1,454 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+}
+
+/***************** HEADER ********************/
+
+header{
+	overflow: auto;	
+	background-color: #fff;
+	border-bottom: 1px #E7E7E7 solid;	
+	position: fixed;
+	z-index: 3;
+}
+
+header div{
+	background-color: #46466E;
+	max-width: auto;
+	padding: 5px 0px;
+}
+
+header img{
+	float: left;
+	width: 15%;
+	height: 15%;
+	margin-left: 100px;
+	margin-top: 3px;
+}
+
+header nav{
+	float: right;
+	margin-right: 60px;
+}
+
+.botonera{
+	max-width: auto;
+	margin: 10px 50px;
+
+	list-style-type: none;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+
+.botonera li{
+	list-style:none;
+	padding: 10px 0px;	
+}
+
+.botonera a{
+	text-decoration:none;  
+	color: black;
+	padding: 10px 20px;
+	display: block;
+	text-align: center;
+	font-size: 13px;
+}
+.botonera a:hover{
+	background-color: #46466E;
+	color: white;
+}
+
+
+/***************** PORTADA ********************/
+
+.bienvenida{
+	width: 100%;
+	height: 600px;	
+
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+
+	text-align: center;
+}
+
+.bienvenida::before{
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.8;
+	background-image: url('../images/inicio.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bienvenida_tx {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.bienvenida_tx p{
+	margin-top: 15em;
+	padding: 15px 15px 15px 15px;
+
+	background-color: #46466E;
+    font-size: 22px;
+	color: #fff;
+	text-align: center;
+
+	z-index: 2;
+}
+
+/***************** QUIEN SOY / SERVICIOS ********************/
+
+.sobremi, 
+.servicios_s{
+	margin: 5em 0;	
+}
+
+.sobremi h1, 
+.servicios_s h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 10vh;
+}
+
+.sobremi div, 
+.par_contenedor {
+	margin: 30px 40px;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.sobremi p, 
+.servicios_s p {	
+	width: 50%;
+	padding: 0px 25px; 
+}
+
+.par_prin{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.par_sec{
+	font-weight: 100;
+	font-size: 14px;
+}
+
+.servicios{
+	padding: 10px 25px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+
+.titulo{		
+	margin-left: 30px;
+	padding-top: 20px; 
+
+	color: #46466E;
+	font-size: 30px;
+	text-transform: uppercase;	
+}
+
+/***************** CONTACTO ********************/
+
+.contacto{
+	padding: 5em 0; 
+	overflow: auto;
+	background-color: #EBEBEB;
+}
+
+.formulario{	
+	width: 70%;
+	padding: 0 10%;
+	float: left;	
+	text-align: center;	
+}
+
+.formulario h1{
+	margin-bottom: 10px;
+}
+
+.formulario p{
+	margin-bottom: 10px;
+}
+
+.formulario form{
+	display: flex;	
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.formulario-in{
+	font-family: 'Montserrat', sans-serif;
+	margin: 10px 30px;
+	padding: 10px 10px;
+	border: 2px solid white;
+	resize: none;
+}
+
+.submit-boton{
+	padding: 10px 14px;
+	margin: 0px 30px;
+
+	color: white;
+	border: 1px solid #657DC4;	
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-o-border-radius: 0px;
+	background-color: #C2DBC1;
+	background: linear-gradient(left, #657DC4, #657DC4);
+	background: -moz-linear-gradient(left, #657DC4, #657DC4);
+	background: -webkit-linear-gradient(left, #657DC4, #657DC4);
+	background: -o-linear-gradient(left, #657DC4, #657DC4);
+	cursor: pointer;
+}
+
+.submit-boton:hover{
+	background: white;
+	color:#657DC4;
+}
+
+.datos{
+	width: 30%;
+	margin-top: 10em;
+	float: right;
+	text-align: left;
+}
+
+.datos h2{
+	margin-bottom: 30px;
+}
+
+.datos div{
+	margin: 10px 0px;
+	overflow: auto;	
+}
+
+.d_item a{
+	float: left;
+}
+
+.d_item p{
+	font-size: 14px;
+	padding: 5px 0px 10px 20px;
+	float: left;
+	text-align: left;
+}
+
+/***************** FOOTER ********************/
+
+footer{
+	background-color: white;
+}
+
+.foot_comienzo {
+	background-color: #46466E;
+	padding: 1.5em 0px;
+}
+
+footer div{
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+
+footer img {
+	height: 5%;
+	width: 5%;
+	margin: 40px 0 20px 0;
+}
+
+.foot_fin {
+	background-color: white;
+	margin-bottom: 40px;
+}
+
+.foot_fin a {
+	margin: 10px;
+}
+
+.linkfb{
+	display: block;
+	width: 33px;
+	height: 33px;
+
+	background-image: url('../images/sprite_32px.png');
+	background-position: 374px 162px;		
+}
+.linkfb:hover{
+	background-position: 374px 88px;
+}
+
+.linktw{
+	display: block;
+	width: 32px;
+	height: 33px;
+
+	background-image: url('../images/sprite_32px.png');
+	background-position: 259px 162px;			
+}
+.linktw:hover{
+	background-position: 259px 87px;
+}
+
+.linkin{
+	display: block;
+	width: 33px;
+	height: 33px;
+
+	background-image: url('../images/sprite_32px.png');
+	background-position: 202px 162px;			
+}
+.linkin:hover{
+	background-position: 202px 87px;
+}
+
+.linkgit{
+	display: block;
+	width: 33px;
+	height: 33px;
+
+	background-image: url('../images/sprite_32px.png');
+	background-position: 145px 162px;			
+}
+.linkgit:hover{
+	background-position: 145px 87px;
+}
+
+/***************** CUADRADO SERVICIO ********************/
+
+.view {
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+    float: left;
+	border: 5px solid #8787A3;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    /*background: #fff url(../images/bgimg.jpg) no-repeat center center;*/
+}
+.view .mask, 
+.view .content {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.view img {
+    display: block;
+    position: relative;
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px 20px 10px 0px;
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+}
+.view p {
+    font-style: italic;
+    font-size: 14px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 10px 10px 20px 20px;
+    text-align: center;
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.view-first img { 
+	transition: all 0.2s linear;
+	margin: 35px 80px;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: #ECE8E5; 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+	padding: 15px 40px 0 20px;
+	width:100%;
+}
+.view-first a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img { 
+	transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+	opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
