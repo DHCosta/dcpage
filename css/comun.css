@@ -414,7 +414,7 @@ footer img {
 }
 .view-first .mask {
     opacity: 0;
-    background-color: #ECE8E5; 
+    background-color: #EBEBEB; 
     transition: all 0.4s ease-in-out;
 }
 .view-first h2 {
