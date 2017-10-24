@@ -273,7 +273,6 @@ header nav{
 
 footer{
 	background-color: white;
-	color: #000;
 }
 
 .foot_comienzo {
@@ -363,7 +362,7 @@ footer img {
     text-align: center;
     box-shadow: 1px 1px 2px #e6e6e6;
     cursor: default;
-    /*background: #fff url(../images/bgimg.jpg) no-repeat center center;*/
+    background: #fff url(../images/bgimg.jpg) no-repeat center center;
 }
 .view .mask, 
 .view .content {
@@ -410,8 +409,7 @@ footer img {
 }
 
 .view-first img { 
-	transition: all 0.2s linear;
-	margin: 35px 80px;
+    transition: all 0.2s linear;
 }
 .view-first .mask {
     opacity: 0;
@@ -427,8 +425,6 @@ footer img {
     transform: translateY(100px);
     opacity: 0;
 	transition: all 0.2s linear;
-	padding: 15px 40px 0 20px;
-	width:100%;
 }
 .view-first a.info{
     opacity: 0;
