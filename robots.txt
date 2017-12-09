@@ -1,0 +1,34 @@
+User-agent: *
+
+Allow: /
+Disallow: /css/
+Disallow: /images/
+Disallow: /js/
+Disallow: /php/
+
+
+User-agent: Googlebot
+
+Allow: /
+Disallow: /css/
+Disallow: /images/
+Disallow: /js/
+Disallow: /php/
+
+
+User-agent: Googlebot-Image
+
+Allow: /images/
+Disallow: /
+Disallow: /css/
+Disallow: /js/
+Disallow: /php/
+
+
+User-agent: Googlebot-Mobile
+
+Allow: /
+Disallow: /css/
+Disallow: /images/
+Disallow: /js/
+Disallow: /php/
